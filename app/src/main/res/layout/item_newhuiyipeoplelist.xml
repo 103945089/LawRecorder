@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80">
+
+        <com.myapp.aaaalittleaicds.view.RoundImageView
+            android:id="@+id/im_headimg"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/default_head"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginTop="@dimen/x2"
+            android:layout_toRightOf="@id/im_headimg"
+            android:text=""
+            android:textSize="@dimen/x24"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_zhuchiren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x2"
+            android:layout_toRightOf="@id/tv_username"
+            android:text="主持人"
+            android:textSize="@dimen/x18"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            android:background="@drawable/boder_zhuchiren"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_bumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginTop="@dimen/x2"
+            android:layout_toRightOf="@id/im_headimg"
+            android:textSize="@dimen/x24"
+            android:text=""
+            android:textColor="@color/text_grey_dark" />
+
+
+        <ImageView
+            android:id="@+id/im_mic"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x40"
+            android:src="@mipmap/icon_mic_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

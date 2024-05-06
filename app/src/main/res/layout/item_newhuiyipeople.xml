@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_circle"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_centerHorizontal="true">
+
+            <com.myapp.aaaalittleaicds.view.RoundImageView
+                android:id="@+id/im_headimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_deafault_head"/>
+
+
+            <ImageView
+                android:id="@+id/im_status"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/x5" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_below="@id/rl_circle"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/tv_zhuchiren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主持人"
+                android:textColor="#0099FF"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1019"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/im_mic"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_below="@id/rl_circle"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_toRightOf="@id/ll_name"
+            android:src="@mipmap/icon_mic_normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>
